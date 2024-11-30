@@ -79,7 +79,7 @@ function About({ theme }) {
                                 </span> <span>
 
                                 </span>
-                                Google Maps
+                                Google Maps, YouTube
                             </li>
                         </ul>
                     </div>
@@ -90,13 +90,13 @@ function About({ theme }) {
                         <ul className="ulist">
                             <li className={`doing-list-data doing-list-data-${theme}`}>
                                 <span className={`list-head list-head-${theme}`}>
-                                    Machine :
+                                    Laptop :
                                 </span> <span>
 
                                 </span>
                                 Asus TUF Gaming FX505DY
                             </li>
-                            <li className={`doing-list-data doing-list-data-${theme}`}>
+                            {/* <li className={`doing-list-data doing-list-data-${theme}`}>
                                 <span className={`list-head list-head-${theme}`}>
                                     CPU :
                                 </span> <span>
@@ -143,7 +143,7 @@ function About({ theme }) {
 
                                 </span>
                                 TAG Gamerz WM800 Wireless Mouse
-                            </li>
+                            </li> */}
 
 
                         </ul>
