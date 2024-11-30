@@ -12,7 +12,7 @@ function About({ theme }) {
 
                     <p className={`about-text about-text-${theme}`} >
                         <span className="list-update">
-                            (Updated on 10 November 2024)
+                            (Updated on 30 November 2024)
                         </span><br />
                         Hello, I am Sahil Kalkal from India. At present, I live in New Delhi, india. I am a web developer, with a experience of 4 years in the field of web development. I am very much passionate towards my work and always open to gain new skills.
                         <br />
