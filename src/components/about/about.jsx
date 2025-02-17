@@ -27,7 +27,7 @@ function About({ theme }) {
                         </p>
                         <div className="contact-opts">
                             <p className={`contact-opt contact-opt-${theme}`}>
-                                1. Email : <a href="mailto:sahilkalkal108@gmail.com" className="linkto">sahilkalkal108@gmail.com</a>
+                                1. Email : <a href="mailto:hello@sahilkalkal.com" className="linkto">hello@sahilkalkal.com</a>
                             </p>
                             <p className={`contact-opt contact-opt-${theme}`}>
                                 2.  <a target="blank" href="https://linkedin.com/in/sahilkalkal">

@@ -280,7 +280,40 @@ function Home({ theme }) {
                                 </p>
                             </div>
                         </a>
-                       
+
+                    </div>
+                </div>
+            </div>
+
+            <div className="sf">
+                <p className={`sub-head sub-head-${theme}`}>
+                    Say Hello
+                </p>
+
+
+                <div className="sfdesc">
+                    <p className={`sft sft-${theme}`}>
+                        If you have any queries or you want to hir me, I am just a mail away. And you can subscribe the newsletter for regular updates. Have a nice day!!
+                    </p>
+
+                    <div className="sfsocials">
+                        <a href="https://strayfarm.vercel.app" target="blank">
+                            <div className={`sfsocial sfsocial-${theme}`}>
+                                <img src={require("./link.png")} alt="" className="sfsimg" />
+                                <p className={`sfstext sfstext-${theme}`}>
+                                    Stray Farm
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/strayfarm" target="blank">
+                            <div className={`sfsocial sfsocial-${theme}`}>
+                                <img src={require("./ig.png")} alt="" className="sfsimg" />
+                                <p className={`sfstext sfstext-${theme}`}>
+                                    Stray Farm
+                                </p>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
