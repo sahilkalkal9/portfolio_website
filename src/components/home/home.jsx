@@ -6,13 +6,42 @@ import { useEffect, useRef } from "react";
 
 function Home({ theme }) {
 
+    const homeRef = useRef(null);
 
+    useEffect(() => {
+        const handleMouseMove = (event) => {
+            if (homeRef.current) {
+                const rotateX = (event.clientY - window.innerHeight / 2) * 0.02;
+                const rotateY = (event.clientX - window.innerWidth / 2) * -0.02;
+                console.log(rotateX, rotateY);
 
+                homeRef.current.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            }
+        };
 
+        const handleMouseLeave = () => {
+            if (homeRef.current) {
+                homeRef.current.style.transform = `rotateX(0deg) rotateY(0deg)`;
+            }
+        };
+
+        if (homeRef.current) {
+            homeRef.current.addEventListener("mousemove", handleMouseMove);
+            homeRef.current.addEventListener("mouseleave", handleMouseLeave);
+        }
+
+        // Cleanup event listener on component unmount
+        return () => {
+            if (homeRef.current) {
+                homeRef.current.removeEventListener("mousemove", handleMouseMove);
+                homeRef.current.removeEventListener("mouseleave", handleMouseLeave);
+            }
+        };
+    }, []);
 
     return (
         <div className="home">
-            <div className="home-box">
+            <div ref={homeRef} id="homeBox" className="home-box">
                 <div className="home-box-left">
                     <p className={`head head-${theme}`}>
                         Hey, I am Sahil
