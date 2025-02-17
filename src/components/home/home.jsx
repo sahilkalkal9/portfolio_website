@@ -280,22 +280,7 @@ function Home({ theme }) {
                                 </p>
                             </div>
                         </a>
-                        <a href="https://instagram.com/strayfarm_adoptions" target="blank">
-                            <div className={`sfsocial sfsocial-${theme}`}>
-                                <img src={require("./ig.png")} alt="" className="sfsimg" />
-                                <p className={`sfstext sfstext-${theme}`}>
-                                    SF Adoptions
-                                </p>
-                            </div>
-                        </a>
-                        <a href="https://instagram.com/strayfarm_awareness" target="blank">
-                            <div className={`sfsocial sfsocial-${theme}`}>
-                                <img src={require("./ig.png")} alt="" className="sfsimg" />
-                                <p className={`sfstext sfstext-${theme}`}>
-                                    SF Awareness
-                                </p>
-                            </div>
-                        </a>
+                       
                     </div>
                 </div>
             </div>
