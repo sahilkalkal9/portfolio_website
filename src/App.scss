@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&family=Commissioner&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quattrocento:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
+@font-face {
+    font-family: 'Gliker';
+    src: url('/Gliker.ttf') format('truetype');
+  }
+  
+
+  
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Commissioner";
+    font-family: "Gliker";
     color: #bbbbbb;
     user-select: none;
+    letter-spacing: .015cm;
 
 }
 
@@ -64,6 +72,7 @@ $projectnamesize : 20px;
 .logo-text {
     font-size: 22px;
     color: white;
+    letter-spacing: .05cm;
 }
 
 .nav {
@@ -114,7 +123,12 @@ $projectnamesize : 20px;
     align-items: flex-start;
     gap: 2cm;
     justify-content: space-between;
-    padding: 1cm 0cm;
+    padding: .7cm .5cm;
+    border: 1px solid hsla(271, 76%, 53%, 0.1);
+    background-color: hsla(271, 76%, 53%, 0.070);
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease;
 
 }
 
@@ -135,23 +149,20 @@ $projectnamesize : 20px;
     color: blueviolet;
 }
 
-.home-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
 
-}
 
 .head {
     font-size: $headFontSize;
     color: white;
-    font-weight: 600;
+    // font-weight: 600;
+    letter-spacing: .05cm;
 }
 
 .sub-head {
     font-size: $subHeadFontSize;
     color: white;
-    font-weight: $subHeadFontWeight;
+    // font-weight: $subHeadFontWeight;
+    letter-spacing: .05cm;
 }
 
 .home-projects {
@@ -350,8 +361,9 @@ $projectnamesize : 20px;
 
 .page-head {
     font-size: $pageHeadFontSize;
-    font-weight: 600;
+    // font-weight: 600;
     color: white;
+    letter-spacing: .05cm;
 }
 
 .about-desc {
@@ -682,14 +694,65 @@ $projectnamesize : 20px;
 
 }
 
-.vscode-box {
-    // border: 1px solid white;
+.vsconh {
     width: 6cm;
-    // height: 6cm;
+    height: auto;
     aspect-ratio: 1/1;
-    // padding: .1cm;
-    border-radius: 5px;
     flex-shrink: 0;
+    perspective: 22cm;
+    animation: moveVS 1s infinite ease-in-out alternate;
+}
+
+.vscon {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s ease;
+
+
+    &:hover {
+
+        transform: rotateY(180deg);
+
+
+
+        .home-img {
+            transform: rotateY(180deg);
+        }
+
+    }
+
+}
+
+@keyframes moveVS {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(10px);
+
+    }
+}
+
+.vscode-box,
+.home-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+
+
+
+.vscode-box {
+    transform: rotateY(0deg);
+}
+
+.home-img {
+    transform: rotateY(180deg);
 }
 
 .vscode {
@@ -710,6 +773,17 @@ $projectnamesize : 20px;
     align-items: center;
     justify-content: flex-start;
     gap: .2cm;
+}
+
+.vsdots {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hoverme {
+    color: blueviolet;
+    font-size: 14px;
 }
 
 .header-dot {
@@ -800,36 +874,42 @@ $projectnamesize : 20px;
     :nth-child(14) {
         background-color: #8E0045;
     }
-    :nth-child(15){
+
+    :nth-child(15) {
         background-color: #00CA4E;
     }
-    :nth-child(16){
+
+    :nth-child(16) {
         background-color: #ACBFA4;
     }
-    :nth-child(17){
+
+    :nth-child(17) {
         background-color: #8390FA;
     }
-    :nth-child(18){
+
+    :nth-child(18) {
         background-color: #AD91A3;
     }
-    :nth-child(19){
+
+    :nth-child(19) {
         background-color: #485798;
     }
-    :nth-child(20){
+
+    :nth-child(20) {
         background-color: #916dbb;
     }
 
 }
 
 .vscode-body {
-    transition: display 1s ease ;
-   
+    transition: display 1s ease;
+
     box-sizing: border-box;
     overflow: hidden;
     height: 100%;
     // border: 1px solid white;
 
-    
+
 }
 
 .vscode-body :hover {
@@ -850,11 +930,11 @@ $projectnamesize : 20px;
     width: 1.6cm;
 }
 
-.vscode-box-light{
+.vscode-box-light {
     background-color: white;
 }
 
-.vscode-light{
+.vscode-light {
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -918,6 +998,11 @@ $projectnamesize : 20px;
     }
 }
 
+.himg {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
 
 @media only screen and (max-width : 1000px) {
@@ -949,9 +1034,7 @@ $projectnamesize : 20px;
 }
 
 @media only screen and (max-width : 600px) {
-    .home-box {
-        padding: 0.5cm 0cm 1cm 0cm;
-    }
+    
 
     .head {
         font-size: 35px;
@@ -1029,3 +1112,5 @@ $projectnamesize : 20px;
 
     }
 }
+
+// @media only screen

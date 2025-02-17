@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom"
 import "../../App.scss"
-import codingImg from "./himgr.png"
+import codingImg from "./himg.jpg"
 import projects from "../projects/project.json"
+import { useEffect, useRef } from "react";
 
 function Home({ theme }) {
 
 
 
-    var showImg = true;
 
 
     return (
@@ -43,27 +43,34 @@ function Home({ theme }) {
 
                 </div>
 
+                <div className="vsconh">
+                    <div className="vscon">
 
-                <div className={`vscode-box vscode-box-${theme}`}>
-                    <div className={`vscode vscode-${theme}`}>
-                        <div className="vscode-header">
-                            <div className="header-dot d1">
+                        <div className={`vscode-box vscode-box-${theme}`}>
+                            <div className={`vscode vscode-${theme}`}>
+                                <div className="vsdots">
+                                    <div className="vscode-header">
+                                        <div className="header-dot d1">
 
-                            </div>
-                            <div className="header-dot d2">
+                                        </div>
+                                        <div className="header-dot d2">
 
-                            </div>
-                            <div className="header-dot d3">
+                                        </div>
+                                        <div className="header-dot d3">
 
-                            </div>
-                        </div>
+                                        </div>
+                                    </div>
+                                    <p className="hoverme">
+                                        Hover me
+                                    </p>
+                                </div>
 
 
-                        <div className="vscode-body">
-                            {
-                                showImg == false
-                                    ? <img src={codingImg} alt="" className="home-img" />
-                                    :
+                                <div className="vscode-body">
+
+
+
+
                                     <div className="vsbody">
                                         <div className="vst vsc1">
 
@@ -127,12 +134,24 @@ function Home({ theme }) {
                                         </div> */}
 
                                     </div>
-                            }
-                        </div>
 
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="home-img">
+                            <img src={codingImg} alt="" className="himg" />
+                        </div>
                     </div>
                 </div>
+
+
+
+
+
             </div>
+
 
             <div className="home-projects-box">
                 <div className="phead">
