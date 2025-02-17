@@ -14,7 +14,8 @@
     font-family: "Gliker";
     color: #bbbbbb;
     user-select: none;
-    letter-spacing: .015cm;
+    // font-weight: 400;
+    letter-spacing: .02cm;
 
 }
 
@@ -391,6 +392,9 @@ $projectnamesize : 20px;
 
 .contact-opt {
     font-size: $textsize;
+    display: flex;
+    align-items: center;
+    gap: .1cm;
 }
 
 
@@ -427,7 +431,7 @@ $projectnamesize : 20px;
 }
 
 .list-head {
-    font-weight: 600;
+    // font-weight: 600;
 }
 
 

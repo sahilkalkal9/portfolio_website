@@ -30,14 +30,18 @@ function About({ theme }) {
                                 1. Email : <a href="mailto:sahilkalkal108@gmail.com" className="linkto">sahilkalkal108@gmail.com</a>
                             </p>
                             <p className={`contact-opt contact-opt-${theme}`}>
-                                2.  <span className="linkto">
-                                    LinkedIn
-                                </span>
+                                2.  <a target="blank" href="https://linkedin.com/in/sahilkalkal">
+                                    <span className="linkto">
+                                        LinkedIn
+                                    </span></a>
+                                <img src={require("./share.png")} alt="" className="share" />
                             </p>
                             <p className={`contact-opt contact-opt-${theme}`}>
-                                3. <span className="linkto" >
-                                    GitHub
-                                </span>
+                                3. <a href="https://github.com/sahilkalkal9" target="blank">
+                                    <span className="linkto" >
+                                        GitHub
+                                    </span></a>
+                                <img src={require("./share.png")} alt="" className="share" />
                             </p>
 
                         </div>
