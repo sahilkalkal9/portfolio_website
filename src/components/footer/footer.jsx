@@ -10,7 +10,7 @@ function Footer({ theme }) {
                         : <img src={require("../nav/logo.png")} alt="Logo" className="fimg" />
                 } */}
                 <p className="madewith" >
-                    Made with ❤️
+                    Thank you!!
                 </p>
                 {/* <div className="footer-socials">
                     <a target="blank" href="https://linkedin.com/in/sahilkalkal">
