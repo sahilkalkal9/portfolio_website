@@ -46,11 +46,11 @@ function Home({ theme }) {
                     <p className={`head head-${theme}`}>
                         Hey, I am Sahil
                     </p>
-                    
+
                     <p className={`head-text head-text-${theme}`}>
                         Sharing the journey of a self-taught developer, check out <Link className="head-text-link" to='/projects' >my projects </Link>and <Link className="head-text-link" to='/about-me' >about me </Link>.
                     </p>
-                    <p className={`head-text head-text-${theme}`}>
+                    <p className={`head-text head-text-${theme} skills-main skills-main-${theme}`}>
                         React JS | Google Firebase
                     </p>
 
@@ -208,6 +208,7 @@ function Home({ theme }) {
                                         {p.type}
                                     </p>
                                 </div>
+                                <img src={require(`../projects/${p.image}`)} alt="" className="pimgnew" />
                                 <p className={`project-name project-name-${theme}`}>
                                     {p.name}
                                 </p>

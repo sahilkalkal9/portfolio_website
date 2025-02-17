@@ -1128,6 +1128,20 @@ $projectnamesize : 20px;
 }
 
 
+.pimgnew {
+    width: 100%;
+    border-radius: 10px;
+    margin: .3cm 0cm;
+}
+
+.skills-main{
+    color: #FFBD44;
+}
+
+.skills-main-light{
+    color: rgb(2, 161, 2);
+}
+
 @media only screen and (max-width : 1000px) {
     .app-content {
         width: calc(100% - 2.3cm);

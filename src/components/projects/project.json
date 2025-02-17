@@ -18,7 +18,7 @@
         ],
         "class": "elp",
         "type": "Self",
-        "image": "images/se.png"
+        "image": "images/socioease.png"
     },
     {
         "name": "Knowledge Gate Clone",
@@ -39,7 +39,7 @@
         ],
         "class": "sip",
         "type": "Self",
-        "image": "images/kgc.png"
+        "image": "images/kgn.png"
     },
     {
         "name": "Pashuholic Foundation",

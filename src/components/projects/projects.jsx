@@ -21,6 +21,7 @@ function Projects({ theme }) {
                                         {p.type}
                                     </p>
                                 </div>
+                                <img src={require(`./${p.image}`)} alt="" className="pimgnew" />
                                 <p className={`project-name project-name-${theme}`}>
                                     {p.name}
                                     {/* <img src={require("./share.png")} className="share pii" alt="" /> */}
