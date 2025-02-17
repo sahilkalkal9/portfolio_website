@@ -6,7 +6,7 @@ function Nav({ theme, setTheme }) {
         <div className={`nav nav-${theme}`}>
             <div className="nav-box">
                 <div className="logo-box">
-                    <Link to="/">
+                    {/* <Link to="/">
                         {
                             theme === "light"
                                 ? <img src={require("./logolight.png")} alt="Logo" className="logo" />
@@ -15,7 +15,24 @@ function Nav({ theme, setTheme }) {
                     </Link>
                     <Link to="/">
                         <p className={`logo-text logo-text-${theme}`}>Sahil Kalkal</p>
-                    </Link>
+                    </Link> */}
+
+
+                    <div className="opw-box">
+                        <div className="odotbox">
+                            <div className="odot">
+
+                            </div>
+                            <div className="odotwave">
+
+                            </div>
+                        </div>
+                        <p className="otwt">
+                            Open to work
+                        </p>
+                    </div>
+
+
                 </div>
                 <div className="menu">
                     <Link to="/about-me">

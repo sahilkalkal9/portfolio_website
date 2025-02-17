@@ -80,7 +80,7 @@ $projectnamesize : 20px;
 }
 
 .nav {
-    border-bottom: 1px solid rgb(41, 41, 41);
+    // border-bottom: 1px solid rgb(41, 41, 41);
     padding: 0cm 0cm .3cm 0cm;
 }
 
@@ -129,7 +129,7 @@ $projectnamesize : 20px;
     justify-content: space-between;
     padding: .7cm .5cm;
     border: 1px solid hsla(271, 76%, 53%, 0.1);
-    background-color: hsla(271, 76%, 53%, 0.070);
+    background-color: hsla(271, 76%, 53%, 0.060);
     border-radius: 20px;
     transform-style: preserve-3d;
     transition: transform 0.1s ease;
@@ -211,7 +211,7 @@ $projectnamesize : 20px;
     padding: .5cm;
     // background-color: rgb(40, 40, 40);
     border: 1px solid hsla(271, 76%, 53%, 0.1);
-    background-color: hsla(271, 76%, 53%, 0.070);
+    background-color: hsla(271, 76%, 53%, 0.060);
     border-radius: 10px;
 }
 
@@ -324,7 +324,7 @@ $projectnamesize : 20px;
     align-items: center;
     justify-content: center;
     margin-top: 2cm;
-    
+
 }
 
 .footer-socials {
@@ -338,7 +338,7 @@ $projectnamesize : 20px;
 }
 
 
-.madewith{
+.madewith {
     font-size: 14px;
     color: blueviolet;
 }
@@ -591,7 +591,7 @@ $projectnamesize : 20px;
 
 
 .nav-light {
-    border-bottom: 1px solid rgb(218, 218, 218);
+    // border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .head-text-light {
@@ -694,7 +694,7 @@ $projectnamesize : 20px;
     padding: .2cm .3cm;
     border-radius: 5px;
     border: 1px solid hsla(271, 76%, 53%, 0.356);
-    
+
     cursor: pointer;
 
     transition: .3s all ease;
@@ -770,7 +770,7 @@ $projectnamesize : 20px;
     position: absolute;
 }
 
-.pii{
+.pii {
     margin-bottom: 0.1cm;
 }
 
@@ -948,6 +948,8 @@ $projectnamesize : 20px;
 
 
 
+
+
 .vst {
     width: 3cm;
     flex-shrink: 0;
@@ -1032,6 +1034,62 @@ $projectnamesize : 20px;
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.opw-box {
+    background-color: rgba(137, 43, 226, 0.07);
+    // padding: .15cm;
+    display: flex;
+    align-items: center;
+    padding: .15cm .3cm;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    box-sizing: border-box;
+    gap: .1cm;
+}
+
+.odotbox {
+    position: relative;
+    // padding: .1cm ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid blueviolet;
+
+}
+
+.odot {
+    width: .25cm;
+    height: .25cm;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.otwt {
+    color: blueviolet;
+    font-size: 14px;
+}
+
+.odotwave {
+    width: .7cm;
+    height: .7cm;
+    background-color: rgba(137, 43, 226, 0.205);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: wave 1s infinite alternate ease;
+    // position: absolute;
+}
+
+
+@keyframes wave {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 
@@ -1128,12 +1186,12 @@ $projectnamesize : 20px;
         width: .55cm;
     }
 
-    
+
 
     .nav-box {
         flex-direction: column;
         align-items: flex-start;
-        gap: .3cm;
+        gap: .5cm;
     }
 
 }
