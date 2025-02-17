@@ -8,36 +8,36 @@ function Home({ theme }) {
 
     const homeRef = useRef(null);
 
-    useEffect(() => {
-        const handleMouseMove = (event) => {
-            if (homeRef.current) {
-                const rotateX = (event.clientY - window.innerHeight / 2) * 0.02;
-                const rotateY = (event.clientX - window.innerWidth / 2) * -0.02;
-                console.log(rotateX, rotateY);
+    // useEffect(() => {
+    //     const handleMouseMove = (event) => {
+    //         if (homeRef.current) {
+    //             const rotateX = (event.clientY - window.innerHeight / 2) * 0.02;
+    //             const rotateY = (event.clientX - window.innerWidth / 2) * -0.02;
+    //             console.log(rotateX, rotateY);
 
-                homeRef.current.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-            }
-        };
+    //             homeRef.current.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    //         }
+    //     };
 
-        const handleMouseLeave = () => {
-            if (homeRef.current) {
-                homeRef.current.style.transform = `rotateX(0deg) rotateY(0deg)`;
-            }
-        };
+    //     const handleMouseLeave = () => {
+    //         if (homeRef.current) {
+    //             homeRef.current.style.transform = `rotateX(0deg) rotateY(0deg)`;
+    //         }
+    //     };
 
-        if (homeRef.current) {
-            homeRef.current.addEventListener("mousemove", handleMouseMove);
-            homeRef.current.addEventListener("mouseleave", handleMouseLeave);
-        }
+    //     if (homeRef.current) {
+    //         homeRef.current.addEventListener("mousemove", handleMouseMove);
+    //         homeRef.current.addEventListener("mouseleave", handleMouseLeave);
+    //     }
 
-        // Cleanup event listener on component unmount
-        return () => {
-            if (homeRef.current) {
-                homeRef.current.removeEventListener("mousemove", handleMouseMove);
-                homeRef.current.removeEventListener("mouseleave", handleMouseLeave);
-            }
-        };
-    }, []);
+    //     // Cleanup event listener on component unmount
+    //     return () => {
+    //         if (homeRef.current) {
+    //             homeRef.current.removeEventListener("mousemove", handleMouseMove);
+    //             homeRef.current.removeEventListener("mouseleave", handleMouseLeave);
+    //         }
+    //     };
+    // }, []);
 
     return (
         <div className="home">
@@ -52,6 +52,10 @@ function Home({ theme }) {
                     <p className={`head-text head-text-${theme}`}>
                         Sharing the journey of a self-taught developer, check out <Link className="head-text-link" to='/projects' >my projects </Link>and <Link className="head-text-link" to='/about-me' >about me </Link>.
                     </p>
+                    <p className={`head-text head-text-${theme}`}>
+                        React JS | Google Firebase
+                    </p>
+
 
                     {/* <div className="socials">
                         <img src={require("./github.png")} alt="" className="social-img" />

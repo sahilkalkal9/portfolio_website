@@ -116,6 +116,7 @@ $projectnamesize : 20px;
     display: flex;
     flex-direction: column;
     gap: 4cm;
+    perspective: 50cm;
 }
 
 .highlight {
@@ -132,6 +133,7 @@ $projectnamesize : 20px;
     background-color: hsla(271, 76%, 53%, 0.060);
     border-radius: 20px;
     transform-style: preserve-3d;
+    // transform: rotateY(40deg);
     transition: transform 0.1s ease;
 
 }
