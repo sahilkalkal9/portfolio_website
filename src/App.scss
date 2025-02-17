@@ -37,16 +37,31 @@ $projectnamesize : 20px;
 // 4. About Page
 
 .App {
-    background-color: #141414;
-
-    // border: 1px solid hsla(271, 76%, 53%, 0.1);
-    // background-color: hsl(270, 88%, 3%);
-    // min-width: 100vw;
+    // background-color: #141414;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background-color: black;
+
+
+        
+        
+        background-image: linear-gradient(#892be215 2px, transparent 2px), linear-gradient(to right, #892be215 2px, #ffffff00 2px);
+        background-size: 50px 50px;
+        z-index: -10;
+
+    }
+
 }
+
 
 .app-content {
     width: 23cm;
@@ -131,7 +146,7 @@ $projectnamesize : 20px;
     justify-content: space-between;
     padding: .7cm .5cm;
     border: 1px solid hsla(271, 76%, 53%, 0.1);
-    background-color: hsla(271, 76%, 53%, 0.060);
+    background-color: hsla(271, 76%, 53%, 0.241);
     border-radius: 20px;
     transform-style: preserve-3d;
     // transform: rotateY(40deg);
@@ -214,7 +229,7 @@ $projectnamesize : 20px;
     padding: .5cm;
     // background-color: rgb(40, 40, 40);
     border: 1px solid hsla(271, 76%, 53%, 0.1);
-    background-color: hsla(271, 76%, 53%, 0.060);
+    background-color: hsla(271, 76%, 53%, 0.241);
     border-radius: 10px;
 }
 
