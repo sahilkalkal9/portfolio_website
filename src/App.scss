@@ -50,7 +50,7 @@ $projectnamesize : 20px;
 
 .app-content {
     width: 23cm;
-    padding: .5cm 1cm 1cm 1cm;
+    padding: .5cm;
     flex-shrink: 0;
     // flex-grow: 1;
     // border: 1px solid white;
@@ -324,7 +324,7 @@ $projectnamesize : 20px;
     align-items: center;
     justify-content: center;
     margin-top: 2cm;
-    gap: .7cm;
+    
 }
 
 .footer-socials {
@@ -333,7 +333,16 @@ $projectnamesize : 20px;
     flex-wrap: wrap;
     gap: .3cm;
 
+
+
 }
+
+
+.madewith{
+    font-size: 14px;
+    color: blueviolet;
+}
+
 
 .fsocial {
     display: flex;
@@ -684,13 +693,14 @@ $projectnamesize : 20px;
     gap: .1cm;
     padding: .2cm .3cm;
     border-radius: 5px;
-    border: 1px solid rgb(60, 60, 60);
+    border: 1px solid hsla(271, 76%, 53%, 0.356);
+    
     cursor: pointer;
 
     transition: .3s all ease;
 
     &:hover {
-        background-color: rgb(60, 60, 60);
+        background-color: hsla(271, 76%, 53%, 0.070);
 
     }
 }
@@ -1118,10 +1128,7 @@ $projectnamesize : 20px;
         width: .55cm;
     }
 
-    .footer-box {
-        gap: .5cm;
-        margin-top: 1cm;
-    }
+    
 
     .nav-box {
         flex-direction: column;

@@ -268,7 +268,7 @@ function Home({ theme }) {
                             <div className={`sfsocial sfsocial-${theme}`}>
                                 <img src={require("./link.png")} alt="" className="sfsimg" />
                                 <p className={`sfstext sfstext-${theme}`}>
-                                    Stray Farm
+                                    Website
                                 </p>
                             </div>
                         </a>
@@ -276,7 +276,7 @@ function Home({ theme }) {
                             <div className={`sfsocial sfsocial-${theme}`}>
                                 <img src={require("./ig.png")} alt="" className="sfsimg" />
                                 <p className={`sfstext sfstext-${theme}`}>
-                                    Stray Farm
+                                    Instagram
                                 </p>
                             </div>
                         </a>
@@ -293,23 +293,23 @@ function Home({ theme }) {
 
                 <div className="sfdesc">
                     <p className={`sft sft-${theme}`}>
-                        If you have any queries or you want to hir me, I am just a mail away. And you can subscribe the newsletter for regular updates. Have a nice day!!
+                        If you have any queries or you want to hire me, I am just a mail away. <br />Also, you can subscribe the newsletter for regular updates
                     </p>
 
                     <div className="sfsocials">
-                        <a href="https://strayfarm.vercel.app" target="blank">
+                        <a href="mailto:hello@sahilkalkal.com" target="blank">
                             <div className={`sfsocial sfsocial-${theme}`}>
-                                <img src={require("./link.png")} alt="" className="sfsimg" />
+                                <img src={require("./mail.png")} alt="" className="sfsimg" />
                                 <p className={`sfstext sfstext-${theme}`}>
-                                    Stray Farm
+                                    Mail
                                 </p>
                             </div>
                         </a>
-                        <a href="https://instagram.com/strayfarm" target="blank">
+                        <a href="https://sahilkalkal.substack.com/?r=1xrgjg&utm_campaign=pub-share-checklist" target="blank">
                             <div className={`sfsocial sfsocial-${theme}`}>
-                                <img src={require("./ig.png")} alt="" className="sfsimg" />
+                                <img src={require("./email.png")} alt="" className="sfsimg" />
                                 <p className={`sfstext sfstext-${theme}`}>
-                                    Stray Farm
+                                    Sign up the newsletter
                                 </p>
                             </div>
                         </a>
