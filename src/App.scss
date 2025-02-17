@@ -54,7 +54,7 @@ $projectnamesize : 20px;
 
 
 
-        background-image: linear-gradient(#892be215 2px, transparent 2px), linear-gradient(to right, #892be215 2px, #ffffff00 2px);
+        background-image: linear-gradient(#892be215 1.5px, transparent 1.5px), linear-gradient(to right, #892be215 1.5px, #ffffff00 1.5px);
         background-size: 50px 50px;
         z-index: -10;
 
@@ -145,7 +145,7 @@ $projectnamesize : 20px;
     gap: 2cm;
     justify-content: space-between;
     padding: .7cm .5cm;
-    border: 1px solid hsla(271, 76%, 53%, 0.1);
+    border: 1px solid rgba(137, 43, 226, 0.281);
     background-color: hsla(271, 76%, 53%, 0.2);
     border-radius: 20px;
     transform-style: preserve-3d;
@@ -600,7 +600,7 @@ $projectnamesize : 20px;
 
 
 
-        background-image: linear-gradient(#892be215 2px, transparent 2px), linear-gradient(to right, #892be215 2px, #ffffff00 2px);
+        background-image: linear-gradient(#892be213 1px, transparent 1px), linear-gradient(to right, #892be213 1px, #ffffff00 1px);
         background-size: 50px 50px;
         z-index: -10;
 
