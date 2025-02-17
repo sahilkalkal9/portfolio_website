@@ -46,9 +46,7 @@ function Home({ theme }) {
                     <p className={`head head-${theme}`}>
                         Hey, I am Sahil
                     </p>
-                    <p className={`head-text head-text-${theme}`}>
-                        A self-taught Web Developer.
-                    </p>
+                    
                     <p className={`head-text head-text-${theme}`}>
                         Sharing the journey of a self-taught developer, check out <Link className="head-text-link" to='/projects' >my projects </Link>and <Link className="head-text-link" to='/about-me' >about me </Link>.
                     </p>
@@ -264,7 +262,7 @@ function Home({ theme }) {
 
                 <div className="sfdesc">
                     <p className={`sft sft-${theme}`}>
-                        Alongside my work as a web developer, I run a nonprofit animal rescue and awareness organization called Stray Farm. We don’t have a shelter, but we collaborate with other shelters to rescue and care for animals in need. We do what we can to protect stray animals, raise awareness about their needs, and encourage adoption.
+                        Alongside my work as a web developer, I run a nonprofit animal rescue and awareness organization named Stray Farm. We don’t have a shelter, but we collaborate with other shelters to rescue and care for animals in need. We do what we can to protect stray animals, raise awareness about their needs, and encourage adoption.
                     </p>
 
                     <div className="sfsocials">

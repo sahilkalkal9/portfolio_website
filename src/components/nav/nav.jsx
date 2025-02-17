@@ -35,6 +35,9 @@ function Nav({ theme, setTheme }) {
 
                 </div>
                 <div className="menu">
+                    <Link to="/">
+                        <p className={`menu-item menu-item-${theme}`}>Home</p>
+                    </Link>
                     <Link to="/about-me">
                         <p className={`menu-item menu-item-${theme}`}>About Me</p>
                     </Link>
