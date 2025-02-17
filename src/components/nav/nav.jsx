@@ -25,11 +25,11 @@ function Nav({ theme, setTheme }) {
                         <p className={`menu-item menu-item-${theme}`}>Projects</p>
                     </Link>
 
-                    {/* {
+                    {
                         theme === "light"
                             ? <img onClick={() => setTheme("dark")} src={require("./moon.png")} alt="Switch to dark mode" className="mode" />
                             : <img onClick={() => setTheme("light")} src={require("./sun.png")} alt="Switch to light mode" className="mode" />
-                    } */}
+                    }
                 </div>
             </div>
         </div>

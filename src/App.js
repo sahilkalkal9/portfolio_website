@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <div id='overlayButtons' className="overlay-buttons">
+      {/* <div id='overlayButtons' className="overlay-buttons">
         <div className="obuttons">
           <div onClick={() => setTheme(theme == "light" ? "dark" : "light")} className={`obutton obutton-${theme}`}>
             {
@@ -26,7 +26,7 @@ function App() {
             }
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={`App App-${theme}`}>
         <div className={`app-content app-content-${theme}`}>
           <Nav theme={theme} setTheme={setTheme} />
