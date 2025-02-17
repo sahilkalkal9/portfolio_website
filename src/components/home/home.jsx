@@ -208,7 +208,7 @@ function Home({ theme }) {
                                         {p.type}
                                     </p>
                                 </div>
-                                <img src={require(`../projects/${p.image}`)} alt="" className="pimgnew" />
+                                {/* <img src={require(`../projects/${p.image}`)} alt="" className="pimgnew" /> */}
                                 <p className={`project-name project-name-${theme}`}>
                                     {p.name}
                                 </p>
