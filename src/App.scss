@@ -38,6 +38,9 @@ $projectnamesize : 20px;
 
 .App {
     background-color: #141414;
+   
+    // border: 1px solid hsla(271, 76%, 53%, 0.1);
+    // background-color: hsl(270, 88%, 3%);
     // min-width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -205,7 +208,7 @@ $projectnamesize : 20px;
     padding: .5cm;
     // background-color: rgb(40, 40, 40);
     border: 1px solid hsla(271, 76%, 53%, 0.1);
-    background-color: hsla(271, 76%, 53%, 0.030);
+    background-color: hsla(271, 76%, 53%, 0.070);
     border-radius: 10px;
 }
 
