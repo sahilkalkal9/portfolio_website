@@ -3,10 +3,10 @@
 @font-face {
     font-family: 'Gliker';
     src: url('/Gliker.ttf') format('truetype');
-  }
-  
+}
 
-  
+
+
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ $projectnamesize : 20px;
 
 .App {
     background-color: #141414;
-   
+
     // border: 1px solid hsla(271, 76%, 53%, 0.1);
     // background-color: hsl(270, 88%, 3%);
     // min-width: 100vw;
@@ -188,10 +188,13 @@ $projectnamesize : 20px;
     color: white;
     transition: .3s all ease;
     cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    gap: .1cm;
 
-    &:hover {
-        text-decoration: underline;
-    }
+    // &:hover {
+    //     text-decoration: underline;
+    // }
 }
 
 .project-desc {
@@ -484,7 +487,7 @@ $projectnamesize : 20px;
 .resume-about-box-light {
     border-bottom: 1px solid transparent;
 
-    &:hover{
+    &:hover {
         border-bottom: 1px solid black;
     }
 }
@@ -757,6 +760,10 @@ $projectnamesize : 20px;
     position: absolute;
 }
 
+.pii{
+    margin-bottom: 0.1cm;
+}
+
 
 
 
@@ -785,7 +792,7 @@ $projectnamesize : 20px;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: .2cm;
+    gap: .15cm;
 }
 
 .vsdots {
@@ -800,8 +807,8 @@ $projectnamesize : 20px;
 }
 
 .header-dot {
-    width: .35cm;
-    height: .35cm;
+    width: .3cm;
+    height: .3cm;
     // background-color: blue;
     border-radius: 50%;
 }
@@ -1047,7 +1054,7 @@ $projectnamesize : 20px;
 }
 
 @media only screen and (max-width : 600px) {
-    
+
 
     .head {
         font-size: 35px;
@@ -1116,7 +1123,7 @@ $projectnamesize : 20px;
         margin-top: 1cm;
     }
 
-    .nav-box{
+    .nav-box {
         flex-direction: column;
         align-items: flex-start;
         gap: .3cm;

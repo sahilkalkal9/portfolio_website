@@ -23,6 +23,7 @@ function Projects({ theme }) {
                                 </div>
                                 <p className={`project-name project-name-${theme}`}>
                                     {p.name}
+                                    {/* <img src={require("./share.png")} className="share pii" alt="" /> */}
                                 </p>
                                 <p className={`project-desc project-desc-${theme}`}>
                                     {p.desc}
