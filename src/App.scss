@@ -1134,11 +1134,11 @@ $projectnamesize : 20px;
     margin: .3cm 0cm;
 }
 
-.skills-main{
+.skills-main {
     color: #FFBD44;
 }
 
-.skills-main-light{
+.skills-main-light {
     color: rgb(2, 161, 2);
 }
 
@@ -1189,8 +1189,10 @@ $projectnamesize : 20px;
 
 
 
-    .about-text {
-        font-size: 16px;
+    .about-desc {
+        .about-text {
+            font-size: 16px;
+        }
     }
 
     .contact-opt {
