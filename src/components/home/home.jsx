@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import "../../App.scss"
 import codingImg from "./himg.jpg"
 import projects from "../projects/project.json"
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Home({ theme }) {
 
@@ -39,6 +39,29 @@ function Home({ theme }) {
     //     };
     // }, []);
 
+    const skills = ["HTML5", "CSS3", "JavaScript", "React JS", "Firebase", "Git", "GitHub"];
+    const [currentSkill, setCurrentSkill] = useState(skills[0]);
+    const [skillHeight, setSkillHeight] = useState(skills[0].length / 3);
+    let i = 0;
+
+    const changeSkillHeight = () => {
+        setCurrentSkill(skills[i]);
+        setSkillHeight(skills[i].length / 3);
+    };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            i = (i + 1) % skills.length;
+            changeSkillHeight();
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+
+
+
+
     return (
         <div className="home">
             <div ref={homeRef} id="homeBox" className="home-box">
@@ -50,8 +73,8 @@ function Home({ theme }) {
                     <p className={`head-text head-text-${theme}`}>
                         Sharing the journey of a self-taught developer, check out <Link className="head-text-link" to='/projects' >my projects </Link>and <Link className="head-text-link" to='/about-me' >about me </Link>.
                     </p>
-                    <p className={`head-text head-text-${theme} skills-main skills-main-${theme}`}>
-                        React JS | Google Firebase
+                    <p className={`head-text head-text-${theme} skills-main skills-main-${theme} skfh`}>
+                        {currentSkill}
                     </p>
 
 
