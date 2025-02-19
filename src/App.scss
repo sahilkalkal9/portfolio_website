@@ -11,11 +11,12 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Gliker";
+
     color: #bbbbbb;
     user-select: none;
     // font-weight: 400;
-    letter-spacing: .02cm;
+    letter-spacing: .03cm;
+    
 
 }
 
@@ -36,6 +37,13 @@ $projectnamesize : 20px;
 // 3. Footer
 // 4. About Page
 
+mark {
+    background-color: rgb(212, 178, 245);
+    color: black;
+    padding: 0cm .2cm;
+    border-radius: 5px;
+}
+
 .App {
     // background-color: #141414;
     min-height: 100vh;
@@ -43,6 +51,7 @@ $projectnamesize : 20px;
     justify-content: center;
     align-items: flex-start;
     position: relative;
+    font-family: "Gliker";
 
     &::before {
         content: "";
@@ -236,7 +245,7 @@ $projectnamesize : 20px;
     border: 1px solid hsla(271, 76%, 53%, 0.3);
     background-color: hsla(271, 76%, 53%, 0.1);
     box-shadow: 1.5px 3px 5px rgba(137, 43, 226, 0.356);
-    
+
     border-radius: 10px;
 }
 
@@ -289,8 +298,8 @@ $projectnamesize : 20px;
 }
 
 .share {
-    width: .4cm;
-    height: .4cm;
+    width: .3cm;
+    height: .3cm;
 }
 
 .socials {
@@ -417,6 +426,7 @@ $projectnamesize : 20px;
 
     .about-text {
         font-size: $textsize;
+        line-height: .63cm;
     }
 }
 
@@ -435,7 +445,7 @@ $projectnamesize : 20px;
 .contact-opt {
     font-size: $textsize;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: .1cm;
 }
 
@@ -1176,7 +1186,7 @@ $projectnamesize : 20px;
     }
 
     to {
-        width: 3.2cm;
+        width: 3.7cm;
     }
 }
 

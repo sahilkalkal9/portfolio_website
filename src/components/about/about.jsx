@@ -11,12 +11,15 @@ function About({ theme }) {
                 <div className="about-desc">
 
                     <p className={`about-text about-text-${theme}`} >
-                        <span className="list-update">
+                        {/* <span className="list-update">
                             (Updated on 30 November 2024)
-                        </span><br />
-                        Hello, I am Sahil Kalkal from India. At present, I live in New Delhi, india. I am a web developer, with a experience of 4 years in the field of web development. I am very much passionate towards my work and always open to gain new skills.
-                        <br />
-                        I started web development in 2019. I have built so many websites for different purposes.
+                        </span><br /> */}
+                        Hello, I'm Sahil Kalkal — a self-taught web developer with a passion for creating engaging websites since 2020. I believe in the power of learning and sharing knowledge, which is why I write blogs on the topics I explore and master.
+                        <br /><br />
+                        Welcome to my digital garden! Here, you can delve into my journey, discover my projects, and read my blogs. I hope that you find inspiration and new insights from my work and content.
+                        <br /><br />
+                        One thing you’ll notice about my website is the absence of ads and trackers. I want you to navigate freely and comfortably. My motivation for writing blogs and articles is to express myself, inspire others to work hard, and connect with like-minded individuals.
+
 
 
                     </p>
@@ -56,9 +59,9 @@ function About({ theme }) {
                         <ul className="ulist" >
                             <li className={`doing-list-data doing-list-data-${theme}`}>Freelancing</li>
                             <li className={`doing-list-data doing-list-data-${theme}`}>Learning Front End in detail</li>
-                            <li className={`doing-list-data doing-list-data-${theme}`}>Learning Node.js</li>
-                            <li className={`doing-list-data doing-list-data-${theme}`}>Preparing for GATE</li>
-                            <li className={`doing-list-data doing-list-data-${theme}`}>Learning the concepts of Designing</li>
+                            <li className={`doing-list-data doing-list-data-${theme}`}>Learning Node.js and Mongo DB</li>
+                            <li className={`doing-list-data doing-list-data-${theme}`}>Solving Leetcode problems</li>
+                            {/* <li className={`doing-list-data doing-list-data-${theme}`}></li> */}
 
                         </ul>
 

@@ -50,6 +50,8 @@ function Nav({ theme, setTheme }) {
                             ? <img onClick={() => setTheme("dark")} src={require("./moon.png")} alt="Switch to dark mode" className="mode" />
                             : <img onClick={() => setTheme("light")} src={require("./sun.png")} alt="Switch to light mode" className="mode" />
                     }
+
+                    {/* <img src={require("./github.png")} alt="" className="mode" /> */}
                 </div>
             </div>
         </div>
