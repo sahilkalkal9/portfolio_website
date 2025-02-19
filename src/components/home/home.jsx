@@ -319,7 +319,7 @@ function Home({ theme }) {
 
                 <div className="sfdesc">
                     <p className={`sft sft-${theme}`}>
-                        If you have any queries or you want to hire me, I am just a mail away. <br />Also, you can subscribe the newsletter for regular updates
+                        If you have any queries or have any project idea, I am just a mail away. <br />Also, you can subscribe the newsletter for regular updates
                     </p>
 
                     <div className="sfsocials">
