@@ -58,7 +58,7 @@ function About({ theme }) {
 
                         <ul className="ulist" >
                             <li className={`doing-list-data doing-list-data-${theme}`}>Freelancing</li>
-                            <li className={`doing-list-data doing-list-data-${theme}`}>Learning Front End in detail</li>
+                            <li className={`doing-list-data doing-list-data-${theme}`}>Learning Front End in depth</li>
                             <li className={`doing-list-data doing-list-data-${theme}`}>Learning Node.js and Mongo DB</li>
                             <li className={`doing-list-data doing-list-data-${theme}`}>Solving Leetcode problems</li>
                             {/* <li className={`doing-list-data doing-list-data-${theme}`}></li> */}
