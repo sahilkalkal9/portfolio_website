@@ -18,7 +18,7 @@ export default function Document() {
                 />
                 <meta 
                     name="keywords" 
-                    content="web developer, frontend developer, React JS, Next JS, JavaScript, HTML, CSS, Firebase, UI/UX, website development, SEO, responsive design" 
+                    content="sahil kalkal, sahil, sahil kalkal web, sahil kalkal web developer, web developer, frontend developer, React JS, Next JS, JavaScript, HTML, CSS, Firebase, UI/UX, website development, SEO, responsive design" 
                 />
                 <meta name="author" content="Sahil Kalkal" />
                 <link rel="icon" href="/himg.jpg" />
