@@ -66,7 +66,7 @@ mark {
 
     background-image: linear-gradient(#892be213 1.5px, transparent 1.5px), linear-gradient(to right, #892be213 1.5px, #ffffff00 1.5px);
 
-    background-size: 50px 50px;
+    background-size: 30px 30px;
     z-index: -10;
 
   }
@@ -310,8 +310,9 @@ mark {
   padding: .5cm;
   // background-color: rgb(40, 40, 40);
   border: 1px solid hsla(271, 76%, 53%, 0.3);
+
   background-color: hsla(271, 76%, 53%, 0.1);
-  box-shadow: 1.5px 3px 5px rgba(137, 43, 226, 0.356);
+  box-shadow:  3px 3px 5px rgba(137, 43, 226, 0.356), -5px -5px 25px rgba(137, 43, 226, 0.356) ;
 
   border-radius: 10px;
 }
@@ -686,7 +687,7 @@ mark {
 
 
     background-image: linear-gradient(#892be210 1px, transparent 1px), linear-gradient(to right, #892be210 1px, #ffffff00 1px);
-    background-size: 50px 50px;
+    background-size: 30px 30px;
     z-index: -10;
 
   }
