@@ -10,19 +10,11 @@ function Nav({ theme, setTheme }) {
         <div className={`nav nav-${theme}`}>
             <div className="nav-box">
                 <div className="logo-box">
-                    {/* <Link href="/">
-                        {
-                            theme === "light"
-                                ? <img src={require("./logolight.png")} alt="Logo" className="logo" />
-                                : <img src={require("./logo.png")} alt="Logo" className="logo" />
-                        }
-                    </Link>
-                    <Link href="/">
-                        <p className={`logo-text logo-text-${theme}`}>Sahil Kalkal</p>
-                    </Link> */}
+                   
+                   
 
 
-                    <div className="opw-box">
+                    {/* <div className="opw-box">
                         <div className="odotbox">
                             <div className="odot">
 
@@ -32,9 +24,9 @@ function Nav({ theme, setTheme }) {
                             </div>
                         </div>
                         <p className="otwt">
-                            Open to work
+                            Working
                         </p>
-                    </div>
+                    </div> */}
 
 
                 </div>

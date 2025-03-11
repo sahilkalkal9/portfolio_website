@@ -13,9 +13,9 @@ function About({ theme }) {
                 <div className="about-desc">
 
                     <p className={`about-text about-text-${theme}`} >
-                        {/* <span className="list-update">
-                            (Updated on 30 November 2024)
-                        </span><br /> */}
+                        <span className="list-update">
+                            (Updated on 11 March 2025)
+                        </span><br /><br />
                         Hello, I'm Sahil Kalkal — a self-taught web developer with a passion for creating engaging websites since 2020. I believe in the power of learning and sharing knowledge, which is why I write blogs on the topics I explore and master.
                         <br /><br />
                         Welcome to my digital garden! Here, you can delve into my journey, discover my projects, and read my blogs. I hope that you find inspiration and new insights from my work and content.
@@ -59,8 +59,8 @@ function About({ theme }) {
 
 
                         <ul className="ulist" >
-                            <li className={`doing-list-data doing-list-data-${theme}`}>Freelancing</li>
-                            <li className={`doing-list-data doing-list-data-${theme}`}>Learning Front End in depth</li>
+                            <li className={`doing-list-data doing-list-data-${theme}`}>Working at Macco Tech as a Front End Developer</li>
+                            <li className={`doing-list-data doing-list-data-${theme}`}>Learning SASS</li>
                             <li className={`doing-list-data doing-list-data-${theme}`}>Learning Node.js and Mongo DB</li>
                             <li className={`doing-list-data doing-list-data-${theme}`}>Solving Leetcode problems</li>
                             {/* <li className={`doing-list-data doing-list-data-${theme}`}></li> */}

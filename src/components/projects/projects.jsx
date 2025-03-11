@@ -9,6 +9,21 @@ function Projects({ theme }) {
                 Projects
             </p>
             <div className="projects-box">
+
+
+               
+
+
+
+
+                
+                
+
+
+
+
+
+
                 {
                     projects.map((p) => (
                         <div className={`project project-${theme}`}>
@@ -72,6 +87,8 @@ function Projects({ theme }) {
                         </div>
                     ))
                 }
+
+
             </div>
         </div>
     )
