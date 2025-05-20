@@ -158,18 +158,19 @@ function About({ theme }) {
                         </ul>
                     </div>
 
-                    <Link href="/resume">
+                    <a href="/resume.pdf" download>
                         <div className={`resume-about-box resume-about-box-${theme}`}>
                             <p className={`rtext rtext-${theme}`}>
                                 My Resume
                             </p>
                             {
-                                theme == "light"
+                                theme === "light"
                                     ? <Image src={require("../projects/sharelight.png")} alt="" className="share" />
                                     : <Image src={require("../projects/share.png")} alt="" className="share" />
                             }
                         </div>
-                    </Link>
+                    </a>
+
                 </div>
             </div>
         </div >

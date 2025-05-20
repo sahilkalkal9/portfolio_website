@@ -14,7 +14,7 @@ function Nav({ theme, setTheme }) {
                    
 
 
-                    {/* <div className="opw-box">
+                    <div className="opw-box">
                         <div className="odotbox">
                             <div className="odot">
 
@@ -24,9 +24,9 @@ function Nav({ theme, setTheme }) {
                             </div>
                         </div>
                         <p className="otwt">
-                            Working
+                            Open to work
                         </p>
-                    </div> */}
+                    </div>
 
 
                 </div>
